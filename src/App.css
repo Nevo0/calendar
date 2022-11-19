@@ -1,11 +1,64 @@
 .App {
   text-align: center;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.App > .calendar-header{
+  /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-content: center;
+    align-items: center;
+}
+li,ul{
+  list-style: none;
+}
+.tiem_li{
+  min-height: 30px;
+
+}
+.tiem_list > ul{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
+.tiem_li-tiem{
+  padding: 0 1em;
+}
+.tiem_list > ul > li{
+  min-height: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #f3f3f3;
+  margin: 2px 0;
+}
+.tiem_li-content{
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.tiem_li-content_item {
+  border: 1px solid #41a3ff;
+  padding: 0.2em 0.6em;
+  margin: 2px 4px;
+}
+.tiem_li-content .tiem-content-item{
+  margin-right: 1em;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
+.tiem_list{}
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
